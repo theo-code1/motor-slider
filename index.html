@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"`>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="./costum.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/your-project-id.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Image Slider V2</title>
+</head> 
+<body>
+        <section id="homePage"  class="containerr bg-darkMode bg-no-repeat bg-1/2 bg-[50% 100%] bg-cover bg-center relative h-[100vh] w-full box-border p-0 m-0 font-Open-Sans ">
+            <div class="brightnessLayer absolute left-0 top-0 w-full h-[100vh] bg-black opacity-[.4] "></div>
+            <header class="topBar backdrop-blur-[5px] filter-none flex items-center justify-around  w-full h-[80px] bg-blue z-50 fixed top-0 left-0"> 
+                <h1 class="head tracking-[4px] text-3xl items-center filter-none font-semibold -translate-x-[50px] brightness-200 text-white cursor-pointer first-letter:text-blue-400">Simo<span class="text-green-300">C</span>ode</h1>
+                <ul class="lists flex items-center filter-none translate-x-[100px] gap-[100px] z-50">
+                    <li class="text-[1.05rem] uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#homePage" class="decoration-none text-white">MotorCycle</a></li>
+                    <li class="text-[1.05rem] uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#aboutPage" class="decoration-none text-white">About</a></li>
+                    <li class="text-[1.05rem] uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#features" class="decoration-none text-white">Features</a></li>
+                    <li class="text-[1.05rem] uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#" class="decoration-none text-white"><a href="" class="decoration-none text-white">More <i class='bx bx-chevron-down items-center text-[30px] before:h-[30px] w-{30px} translate-y-[5px]'></i></a></li>
+                </ul>
+            </header>
+
+
+            <div class="slider opacity-[.92] bg-center brightness-[80%] absolute bottom-[30px] right-[30%] flex justify-center bg-cover w-2/5 h-[140px] box-border rounded-[10px] gap-[20px] z-50">
+                <img id="s1krr" class="img z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/S1000RR.jpg">
+                <img id="z900" class="img z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/z900.jpg">
+                <img id="gsImg" class="img z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/gs.jpg">
+            </div>
+            <div class="sliderV2 opacity-[.92] bg-center brightness-[80%] absolute bottom-[30px] right-[30%] flex justify-center bg-cover w-2/5 h-[140px] box-border rounded-[10px] gap-[20px] z-50">
+                <img id="s1krrV2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/S1000RR.jpg">
+                <img id="z900V2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/z900.jpg">
+                <img id="gsImgV2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/gs.jpg">
+            </div>
+            
+            <div class="btns relative top-[40%] flex justify-between items-center px-[20px] w-[100%]">
+                <button style="--x: -1;" id="prevBtn" class="leftBtn w-[65px] h-[65px] p-[10px] text-darkMode bg-white/60 rounded-full flex items-center justify-center shadow-myShadow shadow-white/60 hover:shadow-hovShadow transition-all duration-300"><i class='bx bx-chevron-left text-[35px] before:h-[30px] w-{30px} '></i></button>
+                <button style="--x: 1;" id="nextBtn" class="rightBtn w-[65px] h-[65px] p-[10px] text-darkMode bg-white/60 rounded-full flex items-center justify-center shadow-myShadow shadow-white/60 hover:shadow-hovShadow transition-all duration-300"><i class='bx bx-chevron-right text-[35px]' ></i></button>
+            </div>
+        </section>
+
+        <section id="aboutPage" class="about-page bg-darkMode h-[170vh] w-[100%] pt-[50px] px-[100px] gap-[20px]">
+            <div class="s1krrV2 relative flex w-[90%] h-[300px] mt-[80px] ">
+                <div class="img-border bg-center bg-cover overflow-hidden w-[500px] h-[100%] " style="--x: -1;"><img class="h-[100%] opacity-[.8] rounded-sm" src="images/S1000RR.jpg" alt=""></div>
+                <div class="s1krr-about gap-[20px] absolute right-[20px] top-0 flex flex-col w-[55%] h-[80%]" style="--x: 1;">
+                    <h1 class="s1krr-header text-white text-[1.5rem]">test</h1> <p class="s1krr-content text-white text-[1.1rem]"></p>
+                </div>
+                </div>
+                <div class="z900V2 relative flex w-[90%] h-[300px] mt-[80px]">
+                    <div class="img-border bg-center bg-cove overflow-hidden w-[500px] h-[100%]" style="--x: -1;"><img class="h-[100%] opacity-[.8] rounded-sm" src="images/z900.jpg" alt=""></div>
+                    <div class="z900-about gap-[20px] absolute right-[20px] top-0 flex flex-col w-[55%] h-[80%]" style="--x: 1;">
+                        <h1 class="z900-header text-white text-[1.5rem]">test</h1> <p class="z900-content text-white text-[1.1rem]"></p>
+                    </div>
+                </div>
+                <div class="gsV2 relative flex w-[90%] h-[300px] mt-[80px]">
+                    <div class="img-border bg-center bg-cove overflow-hidden w-[500px] h-[100%]" style="--x: -1;"><img class="h-[100%] opacity-[.8] rounded-sm" src="images/gs.jpg" alt=""></div>
+                    <div class="gs-about gap-[20px] absolute right-[20px] top-0 flex flex-col w-[55%] h-[80%]" style="--x: 1;">
+                        <h1 class="gs-header text-white text-[1.5rem]">test</h1> <p class="gs-content text-white text-[1.1rem] "></p>
+                    </div>
+                </div>
+            </section>
+            <section id="features" class="h-[120vh] w-[100%] bg-darkMode relative flex justify-center pt-[90px] gap-[50px]">
+                <h1 class="absolute -top-[50px] left-[50%] -translate-x-[50%] text-center text-[3rem] flexflex-col text-white">features</h1>
+            <div class="s1krrFeatures flex flex-col items-center z-[9] gap-[120px]">
+                <div class="imgBorder border rounded-sm overflow-hidden w-[400px] h-[230px] bg-center bg-cover relative " style="--x: 1;"><img class="w-[500px] h-[230px] bg-cover bg-center " src="images/S1000RR.jpg"  alt=""></div>
+                <div class="s1krrContent content relative rounded-md p-[15px] py-[17px] w-[370px] h-[300px] bg-white/50 backdrop-blur-[100px]" style="--x: 1;">
+                    <ul>
+                        <li><b>Engine :</b> 999cc inline-four-cylinder engine</li>
+                        <li><b>Power :</b> 205 horsepower at 13,000 RPM</li>
+                        <li><b>Torque :</b> 83 lb-ft at 11,000 RPM</li>
+                        <li><b>Top speed :</b> Around 186 mph (electronically limited)</li>
+                        <li><b>Transmission :</b> 6-speed transmission with quickshifter  for seamless upshifts and downshifts</li>
+                        <li><b>ShiftCam Technology :</b> Variable valve timing to optimize both low and high-end performance</li>
+                        <li><b>ABS Pro :</b> Cornering ABS, providing braking</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="z900Features flex flex-col items-center z-[9] gap-[120px]">
+                <div class="imgBorder border rounded-sm overflow-hidden w-[400px] h-[230px] bg-center bg-cover relative" style="--y: 1;" ><img class="w-[500px] h-[230px] bg-cover bg-center" src="images/z900.jpg" alt=""></div>
+                <div class="z900Content content relative rounded-md p-[15px] py-[17px] w-[370px] h-[300px] bg-white/50 backdrop-blur-[100px]" style="--x: 1;">
+                    <ul>
+                        <li><b>Engine :</b> 948cc inline-four-cylinder, liquid-cooled engine</li>
+                        <li><b>Power :</b> 125 horsepower at 9,500 RPM</li>
+                        <li><b>Torque :</b> 72.3 lb-ft at 7,700 RPM</li>
+                        <li><b>Transmission :</b> 6-speed gearbox with assist and slipper clutch for smoother shifting and reducing rear-wheel hop during aggressive downshifts</li>
+                        <li><b>Top  </b>Speed: Approximately 135-140 mph</li>
+                        <li><b>Electronic  </b>Throttle Valves: Ensures smooth throttle response and improved fuel efficiency</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gsFeatures flex flex-col items-center z-[9] gap-[120px]">
+                <div class="imgBorder border rounded-sm overflow-hidden w-[400px] h-[230px] bg-center bg-cover relative" style="--x: -1;" ><img class="w-[500px] h-[230px] bg-cover bg-center" src="images/gs.jpg" alt=""></div>
+                <div class="gsContent content relative rounded-md p-[15px] py-[17px] w-[370px] h-[300px] bg-white/50 backdrop-blur-[100px]" style="--x: 1;">
+                    <ul>
+                        <li><b>Engine :</b> 1,254cc flat-twin "Boxer" engine, air/liquid-cooled</li>
+                        <li><b>Power :</b> 136 horsepower at 7,750 RPM</li>
+                        <li><b>Torque :</b> 105 lb-ft at 6,250 RPM</li>
+                        <li><b>ShiftCam Technology :</b> Variable valve timing that adjusts for smoother power delivery, optimizing both low-end torque and top-end performance</li>
+                        <li><b>Transmission :</b> 6-speed gearbox with a hydraulic clutch</li>
+                        <li><b>Top Speed :</b> Around 125 mph</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="h-[60vh] w-[100%] bg-darkMode"></footer>
+        
+    </section> 
+    <script src="app.js"></script>
+</body>
+</html>
