@@ -339,15 +339,37 @@ header.topBar {
     opacity: 1;
   }
 }
-@media screen and(min-width: 768px) and (max-width: 1023px) {
+@media screen and(min-width: 768px), (max-width: 1023px) {
   .container {
     background-position: center;
     width: 100vw;
+  }
+  .topBar {
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 100vw;
+  }
+  .sliderV2 {
+    margin-inline: auto;
+    & .imgV2 {
+      width: 200px;
+      height: 120px;
+    }
+    .topBar head {
+      transform: translateX(0);
+      padding: 10px;
+    }
+    .topBar .lists li {
+      gap: 0;
+    }
   }
 }
 @media screen and (max-width: 767px) {
   .sliderV2 {
     display: none;
+  }
+  #menu-icon {
+    display: block;
   }
   .btns {
     position: relative;

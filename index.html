@@ -12,13 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Image Slider V2</title>
 </head> 
-<body>
+<body class="overflow-x-hidden">
         <section id="homePage"  class="containerr bg-darkMode bg-no-repeat bg-1/2 bg-[50% 100%] bg-cover bg-center relative h-[100vh] w-full box-border p-0 m-0 font-Open-Sans ">
             <div class="brightnessLayer absolute left-0 top-0 w-full h-[100vh] bg-black opacity-[.4] z-[2]"></div>
             <header class="topBar backdrop-blur-[5px] filter-none flex items-center justify-around  w-full h-[80px] bg-blue z-50 fixed top-0 left-0"> 
                 <h1 class="head tracking-[4px] text-3xl items-center filter-none font-semibold -translate-x-[50px] brightness-200 text-white cursor-pointer first-letter:text-blue-400">Simo<span class="text-green-300">C</span>ode</h1>
-                <i class="fa-solid fa-bars none">  <!--<</i>  menu Icon -->
-                <ul class="lists flex items-center filter-none translate-x-[100px] gap-[100px] z-50">
+                <i id="menu-icon" class="fa-solid fa-bars text-[20px] text-white">  <!--<</i>  menu Icon -->
+                <ul class="lists font-mono  flex items-center filter-none translate-x-[100px] gap-[100px] z-50">
                     <li class="text-[1.05rem] uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#homePage" class="decoration-none text-white">MotorCycle</a></li>
                     <li class="text-[1.05rem] uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#aboutPage" class="decoration-none text-white">About</a></li>
                     <li class="text-[1.05rem] uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#features" class="decoration-none text-white">Features</a></li>
@@ -32,7 +32,7 @@
                 <img id="z900" class="img z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/z900.jpg">
                 <img id="gsImg" class="img z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/gs.jpg">
             </div>
-            <div class="sliderV2 opacity-[.95] bg-center brightness-[80%] absolute bottom-[30px] right-[30%] flex justify-center bg-cover w-2/5 h-[140px] box-border rounded-[10px] gap-[20px] z-50 border">
+            <div class="sliderV2 opacity-[.95] bg-center brightness-[80%] absolute bottom-[30px] right-[30%] flex justify-center bg-cover w-2/5 h-[140px] box-border rounded-[10px] gap-[20px] z-50">
                 <img id="s1krrV2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/S1000RR.jpg">
                 <img id="z900V2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/z900.jpg">
                 <img id="gsImgV2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/gs.jpg">
