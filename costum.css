@@ -7,82 +7,83 @@
     font-style: normal;
 } */
 
-body{
-    font-family: sans-serif;
+body {
+  font-family: sans-serif;
 }
 
-.topBar h1{
-    font-family: 'Lostar', sans-serif;
+.topBar h1 {
+  font-family: "Lostar", sans-serif;
 }
-header.topBar{
-    animation: headerLouded 1s 1 ease forwards paused;
+header.topBar {
+  animation: headerLouded 1s 1 ease forwards paused;
 }
 @keyframes headerLouded {
-    from{
-        position: fixed;
-        top: -80px;
-    }
-    to{
-        position: fixed;
-        top: 0;
-    }
+  from {
+    position: fixed;
+    top: -80px;
+  }
+  to {
+    position: fixed;
+    top: 0;
+  }
 }
 
-.content .arrCon:not(.arrCon:first-child){
-    display: none;
+.content .arrCon:not(.arrCon:first-child) {
+  display: none;
 }
-.topBar h1::selection, .topBar h1 span::selection{
-    background-color: transparent;
-    color: white;
+.topBar h1::selection,
+.topBar h1 span::selection {
+  background-color: transparent;
+  color: white;
 }
 
-#z900Con{
-    animation: nextAnimatz900 ease 1.5s  1 forwards running;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+#z900Con {
+  animation: nextAnimatz900 ease 1.5s 1 forwards running;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 @keyframes nextAnimatz900 {
-    0%{
-        position: absolute;
-        left: 40px;
-        top: 130px;
-    }
+  0% {
+    position: absolute;
+    left: 40px;
+    top: 130px;
+  }
 
-    100%{
-        position: absolute;
-        left: 22%;
-        top: 30px;
-    }
+  100% {
+    position: absolute;
+    left: 22%;
+    top: 30px;
+  }
 }
-#gsCon{
-    animation: nextAnimatGs ease 1.5s 1 forwards running;
+#gsCon {
+  animation: nextAnimatGs ease 1.5s 1 forwards running;
 }
 @keyframes nextAnimatGs {
-    from{
-        position: absolute;
-        left: 25%;
-        top: 30px;
-    }
-    to{
-        position: absolute;
-        left: 73%;
-        top: 80px;
-    }
+  from {
+    position: absolute;
+    left: 25%;
+    top: 30px;
+  }
+  to {
+    position: absolute;
+    left: 73%;
+    top: 80px;
+  }
 }
 
-#s1krrCon{
-    animation: nextAnimatS1krr 1.5s ease 1 forwards running;
+#s1krrCon {
+  animation: nextAnimatS1krr 1.5s ease 1 forwards running;
 }
-@keyframes nextAnimatS1krr{
-    from{
-        position: absolute;
-        left: 73%;
-        top: 80px;
-    }
-    to{
-        position: absolute;
-        left: 40px;
-        top: 130px;
-    }
+@keyframes nextAnimatS1krr {
+  from {
+    position: absolute;
+    left: 73%;
+    top: 80px;
+  }
+  to {
+    position: absolute;
+    left: 40px;
+    top: 130px;
+  }
 }
 
 /* .animatLoud{
@@ -97,254 +98,276 @@ header.topBar{
     }
 } */
 
-.containerr{
-    border-image: fill 0 linear-gradient(transparent 60%, #373737 95%);
-    animation: gradientAnimation ease both ;
-    animation-timeline: view(block);    
-    animation-range: contain 0% cover 100%;;
+.containerr {
+  border-image: fill 0 linear-gradient(transparent 60%, #373737 95%);
+  animation: gradientAnimation ease both;
+  animation-timeline: view(block);
+  animation-range: contain 0% cover 100%;
 }
 @keyframes gradientAnimation {
-    0%{
-        border-image: fill 0 linear-gradient(transparent 60%, #373737 95%);
-    }
-    100%{
-        border-image: fill 0 linear-gradient(transparent 1%, #373737 70%);
-    }
-    
+  0% {
+    border-image: fill 0 linear-gradient(transparent 60%, #373737 95%);
+  }
+  100% {
+    border-image: fill 0 linear-gradient(transparent 1%, #373737 70%);
+  }
 }
 
-
-.arrCon:hover h1{
-    font-size: 1.15rem;
+.arrCon:hover h1 {
+  font-size: 1.15rem;
 }
-.slider{
-    animation: sliderAnimation 1.5s 1 linear forwards  ;
-    display: none;
+.slider {
+  animation: sliderAnimation 1.5s 1 linear forwards;
+  display: none;
 }
 
-.sliderV2{
-    animation: animatedSlider ease both;
-    animation-timeline: view();
-    animation-range: contain 0% cover 100%;;
+.sliderV2 {
+  animation: animatedSlider ease both;
+  animation-timeline: view();
+  animation-range: contain 0% cover 100%;
 }
 @keyframes animatedSlider {
-    from{
-        opacity: 1;
-        translate: 0;
-    }
-    to{
-        opacity: .3;
-        translate: 0 -200px;
-    }
+  from {
+    opacity: 1;
+    translate: 0;
+  }
+  to {
+    opacity: 0.3;
+    translate: 0 -200px;
+  }
 }
-.leftBtn{
-    animation: btnsAnimat ease both;
-    animation-timeline: view();
+.leftBtn {
+  animation: btnsAnimat ease both;
+  animation-timeline: view();
 }
-.rightBtn{
-    animation: btnsAnimat ease both;
-    animation-timeline: view();
+.rightBtn {
+  animation: btnsAnimat ease both;
+  animation-timeline: view();
 }
 @keyframes btnsAnimat {
-    60%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(var(--x) * 100px) );
-    }
-    
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(var(--x) * 100px));
+  }
 }
 
-.img-border{
-    animation: aboutScrollAnimat ease both;
-    animation-timeline: view();
+.img-border {
+  animation: aboutScrollAnimat ease both;
+  animation-timeline: view();
 }
-.s1krr-about{
-    animation: aboutScrollAnimat ease both;
-    animation-timeline: view();
-
+.s1krr-about {
+  animation: aboutScrollAnimat ease both;
+  animation-timeline: view();
 }
-.z900-about{
-    animation: aboutScrollAnimat ease both;
-    animation-timeline: view();
-
+.z900-about {
+  animation: aboutScrollAnimat ease both;
+  animation-timeline: view();
 }
-.gs-about{
-    animation: aboutScrollAnimat ease both;
-    animation-timeline: view();
-
+.gs-about {
+  animation: aboutScrollAnimat ease both;
+  animation-timeline: view();
 }
 @keyframes aboutScrollAnimat {
-    0%{
-        transform: translateX(calc(var(--x) * 200px));
-    }
-    80%{
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(calc(var(--x) * 200px));
+  }
+  80% {
+    transform: translateX(0);
+  }
 }
 
-
-.s1krrContent::before{
-    content: '';
-    position: absolute;
-    --size: -120px;
-    top: var(--size);
-    left: 50%;
-    translate: -50% 0;
-    height: 120px;
-    width: 7px;
-    background-image: linear-gradient(to top, #838383, #e4e4e4);
-    animation: visibleBeforeScroll ease both;
-    animation-timeline: view(block);
-    animation-range: contain 20% contain 40%;
+.s1krrContent::before {
+  content: "";
+  position: absolute;
+  --size: -120px;
+  top: var(--size);
+  left: 50%;
+  translate: -50% 0;
+  height: 120px;
+  width: 7px;
+  background-image: linear-gradient(to top, #838383, #e4e4e4);
+  animation: visibleBeforeScroll ease both;
+  animation-timeline: view(block);
+  animation-range: contain 20% contain 40%;
 }
-.s1krrContent::after{
-    content: '';
-    position: absolute;
-    --size: -135px;
-    top: var(--size);
-    left: 50%;
-    translate: -50% 0;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    z-index: 0;
-    background: #e4e4e4;
-    animation: visibleAfterScroll ease both;
-    animation-timeline: view(block);
-    animation-range: contain 20% contain 40%;
-}
-
-.z900Content::before{
-    content: '';
-    --size: -120px;
-    position: absolute;
-    top: var(--size);
-    left: 50%;
-    translate: -50% 0;
-    height: 120px;
-    width: 7px;
-    z-index: 0;
-    background-image: linear-gradient(to top, #838383, #e4e4e4);
-    animation: visibleBeforeScroll ease both;
-    animation-timeline: view(block);
-    animation-range: contain 20% contain 40%;
-}
-.z900Content::after{
-    content: '';
-    position: absolute;
-    --size: -135px;
-    top: var(--size);
-    left: 50%;
-    translate: -50% 0;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    z-index: 0;
-    background: #e4e4e4;
-    animation: visibleAfterScroll ease both;
-    animation-timeline: view(block);
-    animation-range: contain 20% contain 40%;
+.s1krrContent::after {
+  content: "";
+  position: absolute;
+  --size: -135px;
+  top: var(--size);
+  left: 50%;
+  translate: -50% 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  z-index: 0;
+  background: #e4e4e4;
+  animation: visibleAfterScroll ease both;
+  animation-timeline: view(block);
+  animation-range: contain 20% contain 40%;
 }
 
-.gsContent::before{
-    content: '';
-    position: absolute;
-    --size: -120px;
-    top: var(--size);
-    left: 50%;
-    translate: -50% 0;
-    height: 120px;
-    width: 7px;
-    z-index: 0;
-    background-image: linear-gradient(to top, #838383, #e4e4e4);
-    animation: visibleBeforeScroll ease both;
-    animation-timeline: view(block);
-    animation-range: contain 20% contain 40%;
+.z900Content::before {
+  content: "";
+  --size: -120px;
+  position: absolute;
+  top: var(--size);
+  left: 50%;
+  translate: -50% 0;
+  height: 120px;
+  width: 7px;
+  z-index: 0;
+  background-image: linear-gradient(to top, #838383, #e4e4e4);
+  animation: visibleBeforeScroll ease both;
+  animation-timeline: view(block);
+  animation-range: contain 20% contain 40%;
 }
-.gsContent::after{
-    content: '';
-    position: absolute;
-    --size: -135px;
-    top: var(--size);
-    left: 50%;
-    translate: -50% 0;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    z-index: 0;
-    background: #e4e4e4;
-    animation: visibleAfterScroll ease both;
-    animation-timeline: view();
-    transition: all 1s;
+.z900Content::after {
+  content: "";
+  position: absolute;
+  --size: -135px;
+  top: var(--size);
+  left: 50%;
+  translate: -50% 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  z-index: 0;
+  background: #e4e4e4;
+  animation: visibleAfterScroll ease both;
+  animation-timeline: view(block);
+  animation-range: contain 20% contain 40%;
+}
+
+.gsContent::before {
+  content: "";
+  position: absolute;
+  --size: -120px;
+  top: var(--size);
+  left: 50%;
+  translate: -50% 0;
+  height: 120px;
+  width: 7px;
+  z-index: 0;
+  background-image: linear-gradient(to top, #838383, #e4e4e4);
+  animation: visibleBeforeScroll ease both;
+  animation-timeline: view(block);
+  animation-range: contain 20% contain 40%;
+}
+.gsContent::after {
+  content: "";
+  position: absolute;
+  --size: -135px;
+  top: var(--size);
+  left: 50%;
+  translate: -50% 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  z-index: 0;
+  background: #e4e4e4;
+  animation: visibleAfterScroll ease both;
+  animation-timeline: view();
+  transition: all 1s;
 }
 
 @keyframes visibleAfterScroll {
-    0%{
-        opacity: 0;
-        translate: 0 50px;
-    }
-    70%{
-        opacity: 1;    
-    }
-    
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  70% {
+    opacity: 1;
+  }
 }
 @keyframes visibleBeforeScroll {
-    0%{
-        opacity: 0;
-    }
-    70%{
-        opacity: 1;    
-    }
-    
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
 }
 
-#features h1{
-    opacity: 0;
-    animation: visibleScroll ease both;
-    animation-timeline: view();
+#features h1 {
+  opacity: 0;
+  animation: visibleScroll ease both;
+  animation-timeline: view();
 }
 @keyframes visibleScroll {
-    20%{
-        opacity: 0;
-    }
-    90%{
-        opacity: 1;
-    }
-    
+  20% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
 }
 
-.imgBorder{
-    animation: featuresScrollAnimat ease both;
-    animation-timeline: view();
+.imgBorder {
+  animation: featuresScrollAnimat ease both;
+  animation-timeline: view();
 }
-.content{
-    animation: featuresContentScroll ease both;
-    animation-timeline: view();
-    animation-range: cover 0% contain 40%;
+.content {
+  animation: featuresContentScroll ease both;
+  animation-timeline: view();
+  animation-range: cover 0% contain 40%;
 }
 @keyframes featuresContentScroll {
-    0%{
-        transform: translateY(calc(var(--x) * 200px));
-        opacity: .7;
-    }
-    80%{
-        transform: translateYX(calc(var(--x) * 200px));
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(calc(var(--x) * 200px));
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateYX(calc(var(--x) * 200px));
+    opacity: 1;
+  }
 }
 
 @keyframes featuresScrollAnimat {
-    0%{
-        position: relative;
-        right: calc(var(--x) * 400px); 
-        scale: calc(var(--y) * .1);
-        opacity: .5;
+  0% {
+    position: relative;
+    right: calc(var(--x) * 400px);
+    scale: calc(var(--y) * 0.1);
+    opacity: 0.5;
+  }
+  70% {
+    position: relative;
+    right: 0;
+    scale: 1;
+    opacity: 1;
+  }
+}
+@media screen and(min-width: 768px) and (max-width: 1023px) {
+  .container {
+    background-position: center;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sliderV2 {
+    display: none;
+  }
+  .btns {
+    position: relative;
+    top: 80%;
+    width: 40%;
+    margin-inline: auto;
+    & .leftBtn {
+      animation: none;
     }
-    70%{
-        position: relative;
-        right: 0;
-        scale: 1;
-        opacity: 1;
+    & .rightBtn {
+      animation: none;
     }
+  }
+  .lists {
+    display: none;
+  }
+  .s1krrV2 {
+    height: 300px;
+    & .img-border {
+      animation: none;
+    }
+  }
 }
