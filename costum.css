@@ -369,18 +369,26 @@ header.topBar {
     display: none;
   }
   #menu-icon {
-    display: block;
+    visibility: visible;
   }
   .btns {
     position: relative;
-    top: 80%;
+    top: 80vh;
     width: 40%;
     margin-inline: auto;
-    & .leftBtn {
+    /* & .leftBtn {
       animation: none;
     }
     & .rightBtn {
       animation: none;
+    } */
+  }
+  @keyframes btnsAnimat {
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.1;
     }
   }
   .lists {
