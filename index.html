@@ -17,15 +17,25 @@
             <div class="brightnessLayer absolute left-0 top-0 w-full h-[100vh] bg-black opacity-[.4] z-[2]"></div>
             <header class="topBar backdrop-blur-[5px] filter-none flex items-center justify-between  w-full h-[80px] bg-blue z-50 fixed top-0 left-0"> 
                 <h1 class="head tracking-[4px] text-3xl items-center filter-none font-semibold translate-x-[50px] brightness-200 text-white cursor-pointer first-letter:text-blue-400">Simo<span class="text-green-300">C</span>ode</h1>
-                <!-- <i id="menu-icon" class="fa-solid  fa-bars text-[20px] text-white w-[30px] h-[30px]">  <</i>  menu Icon -->
+                <i id="menuIcon" class='bx bx-menu text-[2rem] text-white'></i>
                 <ul class="lists borderfont-mono  flex items-center filter-none -translate-x-[100px] gap-[90px] z-50">
-                    <li class="text-[1.05rem] h-[35px] font-normal uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#homePage" class="head-links decoration-none text-white">MotorCycle</a></li>
-                    <li class="text-[1.05rem] h-[35px] font-normal uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#aboutPage" class="head-links decoration-none text-white">About</a></li>
-                    <li class="text-[1.05rem] h-[35px] font-normal uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#features" class="head-links decoration-none text-white">Features</a></li>
-                    <li class="text-[1.05rem] h-[35px] font-normal uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300 gap-[100px]"> <a href="" class="head-links decoration-none text-white ">More <i class='bx bx-chevron-down items-center before:h-[20px] before:w-[20px] h-[10px] w-[10px] translate-y-[0]'></i></a></li>
+                    <li class="text-[1rem] h-[35px] font-normal uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#homePage" class="head-links decoration-none text-white">MotorCycle</a></li>
+                    <li class="text-[1rem] h-[35px] font-normal uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#aboutPage" class="head-links decoration-none text-white">About</a></li>
+                    <li class="text-[1rem] h-[35px] font-normal uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300"><a href="#features" class="head-links decoration-none text-white">Features</a></li>
+                    <li class="text-[1rem] h-[35px] font-normal uppercase relative px-[2px] py-[5px] after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[3px] after:w-0 after:bg-white hover:after:w-full hover:after:left-0 hover:after:right-0 after:transition-all after:duration-300 gap-[100px]"> <a href="" class="head-links decoration-none text-white ">More <i class='bx bx-chevron-down items-center before:h-[20px] before:w-[20px] h-[10px] w-[10px] translate-y-[0]'></i></a></li>
                 </ul>
             </header>
-
+            <div class="menu transition-all duration-250 bg-white w-[70%] h-[100vh] fixed top-0 left-[-100%] z-50 p-[20px]">
+                <ul>
+                    <li class="px-[15px] py-[10px] text-[1.1rem] hover:font-semibold transition-all duration-300"><a href="#homaPage">Home</a></li>
+                    <hr>
+                    <li class="px-[15px] py-[10px] text-[1.1rem] hover:font-semibold transition-all duration-300"><a href="#aboutPage">About</a></li>
+                    <hr>
+                    <li class="px-[15px] py-[10px] text-[1.1rem] hover:font-semibold transition-all duration-300"><a href="#features">Features</a></li>
+                    <hr>
+                    <li class="px-[15px] py-[10px] text-[1.1rem] hover:font-semibold transition-all duration-300"><a href="#">More </a></li>
+                </ul>
+            </div>
 
             <div class="slider opacity-[.92] bg-center brightness-[80%] absolute bottom-[30px] right-[30%] flex justify-center bg-cover w-2/5 h-[140px] box-border rounded-[10px] gap-[20px] z-50">
                 <img id="s1krr" class="img z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/S1000RR.jpg">
@@ -44,30 +54,30 @@
             </div>
         </section>
 
-        <section id="aboutPage" class="about-page bg-darkMode h-[170vh] w-[100%] pt-[50px] px-[100px] gap-[20px]">
-            <div class="s1krrV2 relative flex w-[90%] h-[300px] mt-[80px]">
-                <div class="img-border bg-center bg-cover overflow-hidden w-[500px] h-[100%] " style="--x: -1;"><img class="h-[100%] opacity-[.8] rounded-sm" src="images/S1000RR.jpg" alt=""></div>
-                <div class="s1krr-about gap-[20px] absolute right-[20px] top-0 flex flex-col w-[55%] h-[80%]" style="--x: 1;">
-                    <h1 class="s1krr-header text-white text-[1.5rem]">test</h1> <p class="s1krr-content text-white text-[1.1rem]"></p>
+        <section id="aboutPage" class="about-page bg-darkMode h-[170vh] w-[100%]  gap-[20px]">
+            <div class="s1krrV2 relative flex w-[90%] h-[300px] mt-[80px] flex-wrap mx-auto border">
+                <div class="img-border bg-center bg-cover overflow-hidden w-[500px] h-[300px] " style="--x: -1;"><img class="h-[100%] opacity-[.8] rounded-sm" src="images/S1000RR.jpg" alt=""></div>
+                <div class="s1krr-about gap-[20px] absolute right-[20px] top-0 flex flex-col w-[55%] h-[90%]" style="--x: 1;">
+                    <h1 class="s1krr-header text-white text-[1.5rem]"></h1> <p class="s1krr-content text-white text-[1.1rem]"></p>
                 </div>
             </div>
-                <div class="z900V2 relative flex w-[90%] h-[300px] mt-[80px]">
-                    <div class="img-border bg-center bg-cove overflow-hidden w-[500px] h-[100%]" style="--x: -1;"><img class="h-[100%] opacity-[.8] rounded-sm" src="images/z900.jpg" alt=""></div>
-                    <div class="z900-about gap-[20px] absolute right-[20px] top-0 flex flex-col w-[55%] h-[80%]" style="--x: 1;">
-                        <h1 class="z900-header text-white text-[1.5rem]">test</h1> <p class="z900-content text-white text-[1.1rem]"></p>
+                <div class="z900V2 relative flex w-[90%] h-[300px] mt-[80px] mx-auto border">
+                    <div class="img-border bg-center bg-cove overflow-hidden w-[500px] h-[300px]" style="--x: -1;"><img class="h-[100%] opacity-[.8] rounded-sm" src="images/z900.jpg" alt=""></div>
+                    <div class="z900-about gap-[20px] absolute right-[20px] top-0 flex flex-col w-[55%] h-[90%]" style="--x: 1;">
+                        <h1 class="z900-header text-white text-[1.5rem]"></h1> <p class="z900-content text-white text-[1.1rem]"></p>
                     </div>
                 </div>
-                <div class="gsV2 relative flex w-[90%] h-[300px] mt-[80px]">
+                <div class="gsV2 relative flex w-[90%] h-[300px] mt-[80px] mx-auto border">
                     <div class="img-border bg-center bg-cove overflow-hidden w-[500px] h-[100%]" style="--x: -1;"><img class="h-[100%] opacity-[.8] rounded-sm" src="images/gs.jpg" alt=""></div>
-                    <div class="gs-about gap-[20px] absolute right-[20px] top-0 flex flex-col w-[55%] h-[80%]" style="--x: 1;">
-                        <h1 class="gs-header text-white text-[1.5rem]">test</h1> <p class="gs-content text-white text-[1.1rem] "></p>
+                    <div class="gs-about gap-[20px] absolute right-[20px] top-0 flex flex-col w-[55%] h-[90%]" style="--x: 1;">
+                        <h1 class="gs-header text-white text-[1.5rem]"></h1> <p class="gs-content text-white text-[1.1rem] "></p>
                     </div>
                 </div>
             </section>
             <section id="features" class="h-[120vh]  w-[100%] bg-darkMode relative flex justify-center pt-[90px] mt-[100px] gap-[50px]">
                 <h1 class="fixed left-[50%] top-[-90px] -translate-x-[50%] text-center text-[3rem] flexflex-col text-white">features</h1>
-            <div class="s1krrFeatures border flex flex-col items-center z-[9] gap-[120px]">
-                <div class="imgBorder border rounded-sm overflow-hidden w-[400px] h-[230px] bg-center bg-cover relative " style="--x: 1;"><img class="w-[500px] h-[230px] bg-cover bg-center " src="images/S1000RR.jpg"  alt=""></div>
+            <div class="s1krrFeatures  flex flex-col items-center z-[9] gap-[120px]">
+                <div class="imgBorder  rounded-sm overflow-hidden w-[400px] h-[230px] bg-center bg-cover relative " style="--x: 1;"><img class="w-[500px] h-[230px] bg-cover bg-center " src="images/S1000RR.jpg"  alt=""></div>
                 <div class="s1krrContent content relative rounded-md p-[15px] py-[17px] w-[370px] h-[300px] bg-white/50 backdrop-blur-[100px]" style="--x: 1;">
                     <ul class="text-[1rem]">
                         <li><b>Engine :</b> 999cc inline-four-cylinder engine</li>
@@ -107,7 +117,65 @@
                 </div>
             </div>
         </section>
-        <footer class="h-[60vh] w-[100%] bg-darkMode"></footer>
+        <!-- <footer class="h-[60vh] w-[100%] bg-darkMode"> -->
+            <footer class="bg-[#1b1b1b] text-white py-8">
+                <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                  
+                  <div class="space-y-2">
+                    <img src="logo.png" alt="Motorcycle Brand Logo" class="w-24">
+                    <p class="text-sm">Your Ultimate Destination for Motorcycles</p>
+                  </div>
+                  
+                  <!-- Navigation Links -->
+                  <div>
+                    <h4 class="font-semibold mb-2">Navigation</h4>
+                    <ul class="space-y-1">
+                      <li><a href="#homePage" class="hover:text-gray-400">Home</a></li>
+                      <li><a href="#aboutPage" class="hover:text-gray-400">About</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                      <li><a href="#features" class="hover:text-gray-400">Features</a></li>
+                      <li><a href="#" class="hover:text-gray-400">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  
+                  <!-- Social Media Links -->
+                  <div>
+                    <h4 class="font-semibold mb-2">Follow Us</h4>
+                    <div class="flex space-x-3">
+                      <a href="https://instagram.com" class="hover:text-gray-400">
+                        <img src="instagram-icon.png" alt="Instagram" class="w-6 h-6">
+                      </a>
+                      <a href="https://facebook.com" class="hover:text-gray-400">
+                        <img src="facebook-icon.png" alt="Facebook" class="w-6 h-6">
+                      </a>
+                      <!-- Add more icons as needed -->
+                    </div>
+                  </div>
+                  
+                  <!-- Newsletter Signup -->
+                  <div>
+                    <h4 class="font-semibold mb-2">Newsletter</h4>
+                    <form class="flex flex-col space-y-2">
+                      <input type="email" placeholder="Enter your email" class="p-2 rounded bg-gray-800 text-white focus:outline-none focus:ring focus:ring-gray-700">
+                      <button type="submit" class="bg-red-600 hover:bg-red-700 text-white py-2 rounded">Subscribe</button>
+                    </form>
+                  </div>
+                  
+                  <!-- Contact Information -->
+                  <div>
+                    <h4 class="font-semibold mb-2">Contact Us</h4>
+                    <p class="text-sm">Phone: +212 7621-5328</p>
+                    <p class="text-sm">Email: simoaraja17@gmail.com</p>
+                  </div>
+                  
+                </div>
+                
+                <!-- Bottom Bar -->
+                <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
+                  <p>&copy; 2024 MotorcycleBrand. All rights reserved.</p>
+                </div>
+              
+        </footer>
         
     </section> 
     <script src="app.js"></script>

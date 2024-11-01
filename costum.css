@@ -32,11 +32,6 @@ header.topBar {
 .content .arrCon:not(.arrCon:first-child) {
   display: none;
 }
-.topBar h1::selection,
-.topBar h1 span::selection {
-  background-color: transparent;
-  color: white;
-}
 
 #z900Con {
   animation: nextAnimatz900 ease 1.5s 1 forwards running;
@@ -156,25 +151,31 @@ header.topBar {
 
 .img-border {
   animation: aboutScrollAnimat ease both;
-  animation-timeline: view();
+  animation-timeline: view(block);
 }
 .s1krr-about {
   animation: aboutScrollAnimat ease both;
-  animation-timeline: view();
+  animation-timeline: view(block);
+  overflow: hidden;
+  margin-left: 50px;
 }
 .z900-about {
   animation: aboutScrollAnimat ease both;
-  animation-timeline: view();
+  animation-timeline: view(block);
+  overflow: hidden;
+  margin-left: 50px;
 }
 .gs-about {
   animation: aboutScrollAnimat ease both;
-  animation-timeline: view();
+  animation-timeline: view(block);
+  overflow: hidden;
+  margin-left: 50px;
 }
 @keyframes aboutScrollAnimat {
   0% {
     transform: translateX(calc(var(--x) * 200px));
   }
-  80% {
+  50% {
     transform: translateX(0);
   }
 }
@@ -416,6 +417,14 @@ header.topBar {
     height: 85%;
     translate: -50px 0;
   }
+  @keyframes aboutScrollAnimat {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(0);
+    }
+  }
 
   #features {
     display: grid;
@@ -428,24 +437,56 @@ header.topBar {
     & .s1krrFeatures {
       width: fit-content;
       margin-inline: auto;
+      & .imgBorder {
+        animation: none;
+      }
+      & .content {
+        animation: none;
+      }
     }
     & .z900Features {
       width: fit-content;
       margin-inline: auto;
+      & .imgBorder {
+        animation: none;
+      }
+      & .content {
+        animation: none;
+      }
     }
     & .gsFeatures {
       width: fit-content;
       margin-inline: auto;
+      & .imgBorder {
+        animation: none;
+      }
+      & .content {
+        animation: none;
+      }
+    }
+    .s1krrContent,
+    .z900Content,
+    .gsContent {
+      &::after {
+        animation: none;
+      }
+      &::before {
+        animation: none;
+      }
     }
   }
+}
+#menuIcon {
+  display: none;
+  margin-right: 10%;
 }
 @media screen and (max-width: 767px) {
   /*  Mobil Resolution */
   .sliderV2 {
     display: none;
   }
-  #menu-icon {
-    visibility: visible;
+  #menuIcon {
+    display: block;
   }
   .btns {
     position: relative;
@@ -459,6 +500,11 @@ header.topBar {
       border-radius: 50%;
     }
   }
+  .s1krrV2 {
+    display: flex;
+    flex-direction: column;
+  }
+
   @keyframes btnsAnimat {
     60% {
       opacity: 1;
@@ -470,10 +516,45 @@ header.topBar {
   .lists {
     display: none;
   }
-  .s1krrV2 {
+  #aboutPage,
+  #features,
+  footer {
+    display: none;
+  }
+  /* .s1krrV2 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+  /*height: 700px;
+    & .img-border {
+      animation: none;
+      width: 100%;
+    }
+    & .s1krr-about {
+    }
+  }
+  .z900V2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     height: 300px;
+    width: 90vw;
     & .img-border {
       animation: none;
     }
   }
+  .gsV2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 300px;
+    width: 90%;
+    & .img-border {
+      animation: none;
+    }
+  }
+  #features {
+    display: grid;
+    grid-template-columns: 1fr;
+  } */
 }
