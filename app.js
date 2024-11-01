@@ -208,3 +208,34 @@ setInterval(() => {
 }, 100)
 
 
+
+
+// Select all section elements and header links
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.head-links');
+
+// Create an intersection observer
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      const id = entry.target.getAttribute('id');
+      if (entry.isIntersecting) {
+        // Add 'active' class to the current link
+        document
+          .querySelector(`.header-link[href="#${id}"]`)
+          .classList.add('active');
+      } else {
+        // Remove 'active' class if it's no longer intersecting
+        document
+          .querySelector(`.header-link[href="#${id}"]`)
+          .classList.remove('active');
+      }
+    });
+  },
+  { threshold: 0.6 } // Adjusts when the link becomes active based on 60% of section visibility
+);
+
+// Observe each section
+sections.forEach((section) => {
+  observer.observe(section);
+});

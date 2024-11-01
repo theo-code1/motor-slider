@@ -1,14 +1,15 @@
 /* @font-face {
-    font-family: 'Lostar';
-    src: url('./fonts/Lostar-Regular.woff2') format('woff2'),  
-         url('./fonts/Lostar-Regular.woff') format('woff'),    
-         url('./fonts/Lostar-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Lostar";
+  src: url("./fonts/Lostar-Regular.woff2") format("woff2"),
+    url("./fonts/Lostar-Regular.woff") format("woff"),
+    url("./fonts/Lostar-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 } */
 
 body {
   font-family: sans-serif;
+  background-color: #212121;
 }
 
 .topBar h1 {
@@ -339,15 +340,26 @@ header.topBar {
     opacity: 1;
   }
 }
+
+#menu-icon {
+  display: none;
+}
+
 @media screen and(min-width: 768px), (max-width: 1023px) {
+  /* Tablet Resolution */
   .container {
     background-position: center;
     width: 100vw;
   }
   .topBar {
     display: flex;
-    /* justify-content: space-evenly; */
     width: 100vw;
+    & ul {
+      gap: 40px;
+      & li {
+        font-size: 1rem;
+      }
+    }
   }
   .sliderV2 {
     margin-inline: auto;
@@ -363,8 +375,72 @@ header.topBar {
       gap: 0;
     }
   }
+  .s1krrV2 {
+    width: 100%;
+  }
+  .s1krr-about {
+    translate: 50px 0;
+    & h1 {
+      font-size: 1.25rem;
+    }
+    & p {
+      font-size: 0.9rem;
+    }
+  }
+  .z900V2 {
+    width: 100%;
+  }
+  .z900-about {
+    translate: 50px 0;
+    & h1 {
+      font-size: 1.25rem;
+    }
+    & p {
+      font-size: 0.9rem;
+    }
+  }
+  .gsV2 {
+    width: 100%;
+  }
+  .gs-about {
+    translate: 50px 0;
+    & h1 {
+      font-size: 1.25rem;
+    }
+    & p {
+      font-size: 0.9rem;
+    }
+  }
+  .img-border {
+    width: 400px;
+    height: 85%;
+    translate: -50px 0;
+  }
+
+  #features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 200vh;
+    padding-top: 50px;
+    & h1 {
+      display: none;
+    }
+    & .s1krrFeatures {
+      width: fit-content;
+      margin-inline: auto;
+    }
+    & .z900Features {
+      width: fit-content;
+      margin-inline: auto;
+    }
+    & .gsFeatures {
+      width: fit-content;
+      margin-inline: auto;
+    }
+  }
 }
 @media screen and (max-width: 767px) {
+  /*  Mobil Resolution */
   .sliderV2 {
     display: none;
   }
@@ -374,14 +450,14 @@ header.topBar {
   .btns {
     position: relative;
     top: 80vh;
-    width: 40%;
+    width: 90%;
     margin-inline: auto;
-    /* & .leftBtn {
-      animation: none;
+    & .leftBtn {
+      border-radius: 50%;
     }
     & .rightBtn {
-      animation: none;
-    } */
+      border-radius: 50%;
+    }
   }
   @keyframes btnsAnimat {
     60% {
