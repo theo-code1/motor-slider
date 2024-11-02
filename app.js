@@ -220,3 +220,5 @@ menuIcon.addEventListener("click", () => {
     menuBar.style.left = "-100%";
   }
 });
+
+

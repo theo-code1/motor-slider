@@ -150,23 +150,24 @@ header.topBar {
 }
 
 .img-border {
-  animation: aboutScrollAnimat ease both;
-  animation-timeline: view(block);
+  animation: aboutScrollAnimat ease forwards;
+  animation-iteration-count: 1;
+  animation-timeline: view();
 }
 .s1krr-about {
-  animation: aboutScrollAnimat ease both;
+  animation: aboutScrollAnimat 1 ease forwards;
   animation-timeline: view(block);
   overflow: hidden;
   margin-left: 50px;
 }
 .z900-about {
-  animation: aboutScrollAnimat ease both;
+  animation: aboutScrollAnimat 1 ease forwards;
   animation-timeline: view(block);
   overflow: hidden;
   margin-left: 50px;
 }
 .gs-about {
-  animation: aboutScrollAnimat ease both;
+  animation: aboutScrollAnimat 1 ease forwards;
   animation-timeline: view(block);
   overflow: hidden;
   margin-left: 50px;
@@ -178,6 +179,9 @@ header.topBar {
   50% {
     transform: translateX(0);
   }
+}
+.animate-once {
+  animation: fadeIn 2s forwards;
 }
 
 .s1krrContent::before {
@@ -345,7 +349,9 @@ header.topBar {
 #menu-icon {
   display: none;
 }
-
+hr {
+  display: none;
+}
 @media screen and(min-width: 768px), (max-width: 1023px) {
   /* Tablet Resolution */
   .container {
@@ -355,10 +361,13 @@ header.topBar {
   .topBar {
     display: flex;
     width: 100vw;
+    & h1 {
+      font-size: 1.4rem;
+    }
     & ul {
       gap: 40px;
       & li {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
   }
@@ -368,19 +377,18 @@ header.topBar {
       width: 200px;
       height: 120px;
     }
-    .topBar head {
-      transform: translateX(0);
-      padding: 10px;
-    }
-    .topBar .lists li {
-      gap: 0;
-    }
+  }
+  #aboutPage {
+    height: 140vh;
   }
   .s1krrV2 {
-    width: 100%;
+    width: 90%;
+    height: 240px;
+    /* overflow: hidden; */
   }
   .s1krr-about {
     translate: 50px 0;
+    height: 240px;
     & h1 {
       font-size: 1.25rem;
     }
@@ -389,10 +397,12 @@ header.topBar {
     }
   }
   .z900V2 {
-    width: 100%;
+    width: 90%;
+    height: 240px;
   }
   .z900-about {
     translate: 50px 0;
+    height: 240px;
     & h1 {
       font-size: 1.25rem;
     }
@@ -401,10 +411,12 @@ header.topBar {
     }
   }
   .gsV2 {
-    width: 100%;
+    width: 90%;
+    height: 240px;
   }
   .gs-about {
     translate: 50px 0;
+    height: 240px;
     & h1 {
       font-size: 1.25rem;
     }
@@ -414,7 +426,7 @@ header.topBar {
   }
   .img-border {
     width: 400px;
-    height: 85%;
+    height: 240px;
     translate: -50px 0;
   }
   @keyframes aboutScrollAnimat {
@@ -425,14 +437,23 @@ header.topBar {
       transform: translateX(0);
     }
   }
-
+  hr {
+    display: block;
+    width: 90%;
+    translate: 0 -90px;
+    margin-inline: auto;
+  }
   #features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 200vh;
     padding-top: 50px;
+    /* height: 150vh; */
+    padding-top: 0;
     & h1 {
-      display: none;
+      font-size: 1.7rem;
+      position: absolute;
+      top: -135px;
     }
     & .s1krrFeatures {
       width: fit-content;
