@@ -352,6 +352,7 @@ header.topBar {
 hr {
   display: none;
 }
+
 @media screen and(min-width: 768px), (max-width: 1023px) {
   /* Tablet Resolution */
   .container {
@@ -504,6 +505,21 @@ hr {
 }
 @media screen and (max-width: 767px) {
   /*  Mobil Resolution */
+  .brightnessLayer {
+    background-color: #212121e0;
+    z-index: 99;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      /* content: "This Version Doesn't available"; */
+      content: "This version is under maintenance";
+      font-size: 2rem;
+      color: #e8e8e8;
+      font-weight: 600;
+    }
+  }
   .sliderV2 {
     display: none;
   }
