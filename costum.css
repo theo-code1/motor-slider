@@ -446,6 +446,7 @@ hr {
   #features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* columns: 2 400px; */
     height: 200vh;
     padding-top: 50px;
     /* height: 150vh; */
