@@ -7,6 +7,8 @@
   font-style: normal;
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+
 body {
   font-family: sans-serif;
   background-color: #212121;
@@ -595,4 +597,28 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
   } */
+}
+
+#contactPage {
+  font-family: Arial, Helvetica, sans-serif;
+  /* Hide arrows for Chrome, Safari, and Edge */
+  & input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  & input:focus,
+  input:valid {
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #e8e8e8;
+    border-radius: 0;
+    & + label {
+      transform: translateY(-25px) scale(1.1);
+      opacity: 0.6;
+    }
+  }
+  #message-input::placeholder {
+    color: #e8e8e8bd;
+  }
 }

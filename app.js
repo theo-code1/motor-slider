@@ -221,4 +221,14 @@ menuIcon.addEventListener("click", () => {
   }
 });
 
+const emailInput = document.getElementById("Email");
+const emailLabel = document.getElementById("email-label");
 
+emailInput.addEventListener("input", () => {
+  if (emailInput.value !== "") {
+    emailLabel.style.transform = "translate(0, -25px)";
+    emailInput.style.backgroundColor = "blue";
+  } else {
+    emailLabel.style.transform = "translate(0, 0)";
+  }
+});
