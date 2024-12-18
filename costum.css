@@ -597,6 +597,11 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
   } */
+  #contactPage,
+  hr,
+  .btns {
+    display: none;
+  }
 }
 
 #contactPage {
@@ -614,7 +619,7 @@ hr {
     border-bottom: solid 2px #e8e8e8;
     border-radius: 0;
     & + label {
-      transform: translateY(-25px) scale(1.1);
+      transform: translateY(-25px) scale(1.05);
       opacity: 0.6;
     }
   }
