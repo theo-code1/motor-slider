@@ -208,8 +208,8 @@ setInterval(() => {
 }, 100);
 
 const menuBar = document.querySelector(".menu");
-const menuIcon = querySelector(".menuIcon");
-const isVisible = false;
+const menuIcon = document.querySelector(".menuIcon");
+const isVisible = false
 
 menuIcon.addEventListener("click", () => {
   if (isVisible) {

@@ -43,9 +43,9 @@
                 <img id="gsImg" class="img z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/gs.jpg">
             </div>
             <div class="sliderV2 opacity-[.95] bg-center brightness-[80%] absolute bottom-[30px] right-[30%] flex justify-center bg-cover w-2/5 h-[140px] box-border rounded-[10px] gap-[20px] z-50">
-                <img id="s1krrV2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/S1000RR.jpg">
-                <img id="z900V2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/z900.jpg">
-                <img id="gsImgV2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-500" src="images/gs.jpg">
+                <img id="s1krrV2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-300 active:scale-[0.95]" src="images/S1000RR.jpg">
+                <img id="z900V2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-300 active:scale-[0.95]" src="images/z900.jpg">
+                <img id="gsImgV2" class="imgV2 z-[999] bg-cover bg-center w-[250px] h-[140px] border-solid border-white/50 border-[1px] rounded-[10px] hover:scale-[1.1] hover:shadow-2xl hover:shadow-darkMode transition-all duration-300 active:scale-[0.95]" src="images/gs.jpg">
             </div>
             
             <div class="btns relative top-[40%] flex justify-between items-center px-[20px] w-[100%] z-50">
@@ -75,7 +75,7 @@
                 </div>
             </section>
             <hr>
-            <section id="features" class="h-[120vh]  w-[100%] bg-darkMode relative flex justify-center pt-[90px] mt-[100px] gap-[50px]">
+            <section id="features" class="h-[120vh] w-[100%] bg-darkMode relative flex justify-center pt-[90px] mt-[100px] gap-[50px]">
                 <h1 class="absolute left-[50%] top-[-90px] -translate-x-[50%] text-center text-[3rem] flexflex-col text-white">features</h1>
             <div class="s1krrFeatures  flex flex-col items-center z-[9] gap-[120px]">
                 <div class="imgBorder  rounded-sm overflow-hidden w-[400px] h-[230px] bg-center bg-cover relative " style="--x: 1;"><img class="w-[500px] h-[230px] bg-cover bg-center " src="images/S1000RR.jpg"  alt=""></div>
@@ -139,7 +139,7 @@
             </div>    
             <div id="successMessage" class="succesInfo hidden z-50 flex flex-col items-center justify-center w-[50vw] h-[70vh] bg-textColor rounded-[10px] fixed top-[50%] -translate-y-[50%] mx-auto p-[10px]">
                 <i class='bx bx-check-circle text-[8rem] text-center text-green-600 -translate-y-[50px]'></i>
-                <i id="close-icon" class='bx bx-x text-darkMode text-[2.85rem] hover:scale-[1.05] active:scale-[0.9] transition-all duration-100 absolute right-[15px] top-[10px]'></i>
+                <i onclick="handleHideMsg()" id="close-icon" class='bx bx-x text-darkMode text-[2.85rem] hover:scale-[1.05] active:scale-[0.9] transition-all duration-100 absolute right-[15px] top-[10px]'></i>
                 <h2 class="text-center text-[1.1rem] font-semibold">Contact Information Sent Successfully !</h2>
                 <button id="closeBtn" class="text-darkMode border-[1.5px] border-darkMode border-solid px-[15px] py-[7px] rounded-md text-[1.1rem] font-semibold absolute bottom-[10%] active:scale-[0.8] transition-all duration-100">That's Good !</button>
             </div>
